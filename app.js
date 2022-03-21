@@ -154,9 +154,10 @@ const dinoData = {
         }
         })();
 
-        // Create Dino Objects
+        // Create Dino Objects, new keyword on line 161
         function createDinoObjects () {
             let dinoObjects = dinoData.Dinos.map((each) => {
+                // NEW KEYWORD 
                 let dino = new Dino(each);
                 let humanData = human(userInput.getData());
 
